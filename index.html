@@ -2,19 +2,78 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Página web de Nicolás Mera Solano</title>
+
+    <!-- Adaptación para celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Página web de ensayo html</title>
+
+    <style>     
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 40px;
+            color: #333;
+        }
+
+        h1 {
+            color: #0a3d62;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1e3799;
+            border-bottom: 2px solid #1e3799;
+            padding-bottom: 5px;
+        }
+
+        a {
+            color: #e55039;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* 📱 Ajustes para pantallas pequeñas */
+        @media (max-width: 600px) {
+            body {
+                margin: 15px;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+
 </head>
 <body>
 
     <h1>Bienvenido a la página de Nicolás Mera Solano</h1>
 
     <p>
-        Mi nombre es Nicolás Mera Solano. Actualmente tengo 18 años,
-        con casi 3 años de experiencia en el contexto de programación con Python.
+        Mi nombre es Nicolás, actualmente tengo 18 años,
+        con casi 3 años de experiencia en programación con Python.
     </p>
 
     <p>
-        Si quieres visitar la página web del estimable amigo Sam Tupy,
+        Si quieres visitar la página web de Sam Tupy,
         debajo de este fragmento está el enlace.
     </p>
 
@@ -31,21 +90,17 @@
 
         <p>
             Soy un programador con discapacidad visual. Me interesa especialmente
-            el tema de la <strong>accesibilidad</strong> y el uso de
-            <strong>múltiples herramientas</strong>.
+            el tema de la <strong>accesibilidad</strong>.
         </p>
     </section>
 
     <section>
         <h2>Contacto</h2>
 
-        <input type="text" placeholder="Por favor, ingresa tu nombre">
-        <br><br>
-
-        <input type="email" placeholder="Escribe tu dirección de correo electrónico">
-        <br><br>
-
-        <button>Enviar</button>
+        <h3>Mi canal de YouTube</h3>
+        <a href="https://www.youtube.com/@nmerasolano" target="_blank" rel="noopener">
+            Visitar mi canal de YouTube
+        </a>
 
     </section>
 
