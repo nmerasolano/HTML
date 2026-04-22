@@ -2,13 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-
-    <!-- Adaptación para celulares -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Página web de ensayo html</title>
 
-    <style>     
+    <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f6f8;
@@ -25,6 +22,10 @@
             color: #1e3799;
             border-bottom: 2px solid #1e3799;
             padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #0a3d62;
         }
 
         a {
@@ -45,7 +46,27 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        /* 📱 Ajustes para pantallas pequeñas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1e3799;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
         @media (max-width: 600px) {
             body {
                 margin: 15px;
@@ -59,10 +80,14 @@
             h2 {
                 font-size: 18px;
             }
+
+            table {
+                font-size: 14px;
+            }
         }
     </style>
-
 </head>
+
 <body>
 
     <h1>Bienvenido a la página de Nicolás Mera Solano</h1>
@@ -98,10 +123,35 @@
         <h2>Contacto</h2>
 
         <h3>Mi canal de YouTube</h3>
-        <a href="https://www.youtube.com/@nmerasolano" target="_blank" rel="noopener">
-            Visitar mi canal de YouTube
-        </a>
 
+        <p>
+            <a href="https://www.youtube.com/@nmerasolano" target="_blank" rel="noopener">
+                Visitar mi canal de YouTube
+            </a>
+        </p>
+    </section>
+
+    <section>
+        <h2>Tabla de conocimientos</h2>
+
+        <table>
+            <tr>
+                <th>Tecnología</th>
+                <th>Experiencia</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Casi 3 años</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>En aprendizaje</td>
+            </tr>
+            <tr>
+                <td>Flask</td>
+                <td>Proyecto actual</td>
+            </tr>
+        </table>
     </section>
 
 </body>
